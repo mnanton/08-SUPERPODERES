@@ -14,6 +14,7 @@
 		45405DA02B01570900F81FB5 /* MarvelHeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45405D9F2B01570900F81FB5 /* MarvelHeroesTests.swift */; };
 		45405DAA2B01570900F81FB5 /* MarvelHeroesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45405DA92B01570900F81FB5 /* MarvelHeroesUITests.swift */; };
 		45405DAC2B01570900F81FB5 /* MarvelHeroesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45405DAB2B01570900F81FB5 /* MarvelHeroesUITestsLaunchTests.swift */; };
+		45405DC72B01580A00F81FB5 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 45405DC62B01580A00F81FB5 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45405DC72B01580A00F81FB5 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +97,10 @@
 		45405D8C2B01570700F81FB5 /* MarvelHeroes */ = {
 			isa = PBXGroup;
 			children = (
+				45405DBA2B01577800F81FB5 /* Presentation */,
+				45405DB92B01576F00F81FB5 /* Domain */,
+				45405DB82B01576A00F81FB5 /* Data */,
 				45405D8D2B01570700F81FB5 /* MarvelHeroesApp.swift */,
-				45405D8F2B01570700F81FB5 /* ContentView.swift */,
 				45405D912B01570900F81FB5 /* Assets.xcassets */,
 				45405D932B01570900F81FB5 /* MarvelHeroes.entitlements */,
 				45405D942B01570900F81FB5 /* Preview Content */,
@@ -129,6 +133,108 @@
 			path = MarvelHeroesUITests;
 			sourceTree = "<group>";
 		};
+		45405DB82B01576A00F81FB5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				45405DBD2B01579900F81FB5 /* Repository */,
+				45405DBC2B01579000F81FB5 /* Local */,
+				45405DBB2B01578200F81FB5 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		45405DB92B01576F00F81FB5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				45405DC12B0157C000F81FB5 /* Extensions */,
+				45405DC02B0157B800F81FB5 /* UserCases */,
+				45405DBF2B0157B200F81FB5 /* Models */,
+				45405DBE2B0157A300F81FB5 /* Protocols */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		45405DBA2B01577800F81FB5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				45405DC32B0157D500F81FB5 /* ViewModel */,
+				45405DC22B0157CC00F81FB5 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		45405DBB2B01578200F81FB5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				45405DC42B0157E500F81FB5 /* KeyChain */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		45405DBC2B01579000F81FB5 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		45405DBD2B01579900F81FB5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		45405DBE2B0157A300F81FB5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		45405DBF2B0157B200F81FB5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45405DC02B0157B800F81FB5 /* UserCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserCases;
+			sourceTree = "<group>";
+		};
+		45405DC12B0157C000F81FB5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		45405DC22B0157CC00F81FB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45405D8F2B01570700F81FB5 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45405DC32B0157D500F81FB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45405DC42B0157E500F81FB5 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +251,9 @@
 			dependencies = (
 			);
 			name = MarvelHeroes;
+			packageProductDependencies = (
+				45405DC62B01580A00F81FB5 /* KeychainSwift */,
+			);
 			productName = MarvelHeroes;
 			productReference = 45405D8A2B01570700F81FB5 /* MarvelHeroes.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +326,9 @@
 				Base,
 			);
 			mainGroup = 45405D812B01570700F81FB5;
+			packageReferences = (
+				45405DC52B01580A00F81FB5 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 45405D8B2B01570700F81FB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -617,6 +729,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45405DC52B01580A00F81FB5 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45405DC62B01580A00F81FB5 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45405DC52B01580A00F81FB5 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 45405D822B01570700F81FB5 /* Project object */;
 }
