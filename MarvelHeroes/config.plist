@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TokenPublic</key>
+	<string>8304a3a9ed0f79d90890452964da38ce</string>
+	<key>TokenPrivate</key>
+	<string>5d5e1bbb0746e3e6a1b126e80d8d8b8765d2451e</string>
+	<key>TokenHash</key>
+	<string>f6616fb76000bbab049d51186f44b9c6</string>
+</dict>
+</plist>
