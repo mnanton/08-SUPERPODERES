@@ -10,7 +10,7 @@ import Foundation
 typealias Heroes = [Hero]
 
 // MARK: - Hero
-struct Hero: Codable {
+struct Hero: Codable,Identifiable {
     let id: Int
     let name, description: String
     let modified: Date

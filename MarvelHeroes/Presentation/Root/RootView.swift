@@ -13,13 +13,21 @@ struct RootView: View {
     var body: some View {
         switch rootViewModel.status {
         case .none:
-            MainView()
+            withAnimation{
+               MainView(viewModel: MainViewModel())
+            }
         case .loaded:
-            MainView()
+            withAnimation{
+                MainView(viewModel: MainViewModel())
+            }
         case .loading:
-            LoadingView()
+            withAnimation{
+                LoadingView()
+            }
         case .error(error: let errorString):
-         ErrorView(error: errorString)
+            withAnimation{
+                ErrorView(error: errorString)
+            }
         }
     }
 }

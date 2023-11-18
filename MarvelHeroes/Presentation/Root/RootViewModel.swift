@@ -11,10 +11,12 @@ import Combine
 final class RootViewModel: ObservableObject {
     // Publicadores
     @Published var status = Status.none
+    @Published var heroes: Heroes?
   
     // Suscriptor
     var suscriptors = Set<AnyCancellable>()
     
-    
-    
+    func getHeroes(){
+        
+    }
 }

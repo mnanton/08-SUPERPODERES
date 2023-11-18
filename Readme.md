@@ -10,6 +10,7 @@ Requisitos Obligatorios.
 Para el desarrollo de la aplicación se deberá de utilizar las siguientes tecnologías, dentro de una arquitectura MVVM :  
 ● SwiftUI. 
 ● Combine. 
+ 
 La aplicación constará de un listado de héroes donde saldrá una lista con la foto y el nombre. Al hacer Tap sobre el Héroe se verá el detalle mostrando las series  donde aparece el héroe con una foto de la serie, el titulo y una descripción.  
 
 Habrá que añadir testing sobre el código de la App y alcanzar un % cobertura mínimo de un 50%. 

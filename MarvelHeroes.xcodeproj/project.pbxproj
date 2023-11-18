@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450CBF592B055575003C1DCF /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CBF582B055575003C1DCF /* CellView.swift */; };
+		451AA0B72B051B960054FAA7 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451AA0B62B051B960054FAA7 /* MainViewModel.swift */; };
 		45405D8E2B01570700F81FB5 /* MarvelHeroesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45405D8D2B01570700F81FB5 /* MarvelHeroesApp.swift */; };
 		45405D922B01570900F81FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45405D912B01570900F81FB5 /* Assets.xcassets */; };
 		45405D962B01570900F81FB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45405D952B01570900F81FB5 /* Preview Assets.xcassets */; };
@@ -23,6 +25,7 @@
 		45A257542B02728E00FFFC48 /* ApiMarvelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A257532B02728E00FFFC48 /* ApiMarvelModel.swift */; };
 		45B5B60B2B03EE4000EAB91F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B5B60A2B03EE4000EAB91F /* LoadingView.swift */; };
 		45B5B60E2B03F6D900EAB91F /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B5B60D2B03F6D900EAB91F /* ErrorView.swift */; };
+		45F1AB2E2B093AF700564691 /* ApiMarvelGenericos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F1AB2D2B093AF700564691 /* ApiMarvelGenericos.swift */; };
 		45FA5EE72B029F6600B57E29 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45FA5EE62B029F6600B57E29 /* config.plist */; };
 		45FA5EEA2B02A0D800B57E29 /* DefaultToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA5EE92B02A0D800B57E29 /* DefaultToken.swift */; };
 		45FA5EEC2B02AA9C00B57E29 /* HerosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA5EEB2B02AA9C00B57E29 /* HerosModel.swift */; };
@@ -46,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		450CBF582B055575003C1DCF /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		451AA0B62B051B960054FAA7 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		45405D8A2B01570700F81FB5 /* MarvelHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45405D8D2B01570700F81FB5 /* MarvelHeroesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelHeroesApp.swift; sourceTree = "<group>"; };
 		45405D912B01570900F81FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +70,8 @@
 		45A257532B02728E00FFFC48 /* ApiMarvelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMarvelModel.swift; sourceTree = "<group>"; };
 		45B5B60A2B03EE4000EAB91F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		45B5B60D2B03F6D900EAB91F /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		45F1AB2D2B093AF700564691 /* ApiMarvelGenericos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMarvelGenericos.swift; sourceTree = "<group>"; };
+		45F1AB2F2B09466500564691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		45FA5EE62B029F6600B57E29 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		45FA5EE92B02A0D800B57E29 /* DefaultToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultToken.swift; sourceTree = "<group>"; };
 		45FA5EEB2B02AA9C00B57E29 /* HerosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosModel.swift; sourceTree = "<group>"; };
@@ -119,6 +126,7 @@
 		45405D8C2B01570700F81FB5 /* MarvelHeroes */ = {
 			isa = PBXGroup;
 			children = (
+				45F1AB2F2B09466500564691 /* Info.plist */,
 				45405DBA2B01577800F81FB5 /* Presentation */,
 				45405DB92B01576F00F81FB5 /* Domain */,
 				45405DB82B01576A00F81FB5 /* Data */,
@@ -216,6 +224,7 @@
 				45A2574D2B0268FC00FFFC48 /* StatusModel.swift */,
 				45A257532B02728E00FFFC48 /* ApiMarvelModel.swift */,
 				45FA5EEB2B02AA9C00B57E29 /* HerosModel.swift */,
+				45F1AB2D2B093AF700564691 /* ApiMarvelGenericos.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,6 +254,7 @@
 		45996BE82B03A5A20045A736 /* CellView */ = {
 			isa = PBXGroup;
 			children = (
+				450CBF582B055575003C1DCF /* CellView.swift */,
 			);
 			path = CellView;
 			sourceTree = "<group>";
@@ -254,6 +264,7 @@
 			children = (
 				45996BE82B03A5A20045A736 /* CellView */,
 				45996BE52B03A5000045A736 /* MainView.swift */,
+				451AA0B62B051B960054FAA7 /* MainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -426,6 +437,9 @@
 				45A2574E2B0268FC00FFFC48 /* StatusModel.swift in Sources */,
 				45A257542B02728E00FFFC48 /* ApiMarvelModel.swift in Sources */,
 				45FA5EEC2B02AA9C00B57E29 /* HerosModel.swift in Sources */,
+				451AA0B72B051B960054FAA7 /* MainViewModel.swift in Sources */,
+				45F1AB2E2B093AF700564691 /* ApiMarvelGenericos.swift in Sources */,
+				450CBF592B055575003C1DCF /* CellView.swift in Sources */,
 				45B5B60B2B03EE4000EAB91F /* LoadingView.swift in Sources */,
 				45A257522B02702900FFFC48 /* ApiMarvel.swift in Sources */,
 				45B5B60E2B03F6D900EAB91F /* ErrorView.swift in Sources */,
@@ -596,6 +610,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarvelHeroes/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -634,6 +650,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarvelHeroes/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

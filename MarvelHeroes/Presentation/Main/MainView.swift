@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct MainView: View {
-    @EnvironmentObject var rootViewModel: RootViewModel
+    @StateObject var viewModel: MainViewModel
     
     var body: some View {
-        Text("MainView")
+        NavigationStack {
+            List{
+                if let heros = viewModel.hero{
+                    ForEach(heros){ data in
+                        NavigationLink {
+                            //Destino
+                           // HeroesDetailView(hero: data)
+                        } label: {
+                            //La celda personalizada
+                            CellView(hero: data)
+                                .frame(height: 200)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Marvel Heroes")
+        }
     }
 }
 
 #Preview {
-    MainView()
+    MainView(viewModel: MainViewModel(testing: true))
 }
